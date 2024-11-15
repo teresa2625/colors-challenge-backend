@@ -10,4 +10,14 @@ const getColorSwatches = (req, res) => {
   }
 };
 
-module.exports = { getColorSwatches };
+const colorStrategy = async (strategyData, res) => {
+  try {
+    const response = await ColorService.addColorStrategy(strategyData);
+    console.log("response", response);
+    sendSuccess(res);
+  } catch (error) {
+    sendError(res, error);
+  }
+};
+
+module.exports = { getColorSwatches, colorStrategy };
