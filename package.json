@@ -1,0 +1,23 @@
+{
+  "name": "colors-challenge-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "format": "prettier --write **/**/*.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "pg": "^8.8.0",
+    "prettier": "^3.3.3"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "keywords": [],
+  "author": "Teresa <chua0033@student.monash.edu>",
+  "license": "ISC",
+  "description": "",
+  "repository": "https://github.com/teresa2625/colors-challenge-backend.git"
+}
