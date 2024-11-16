@@ -30,7 +30,7 @@ npm install
 
 3. Start the backend server:
 ```
-npm run start
+npm start
 ```
 This will start the backend server, and it will be running on http://localhost:5000 by default.
 
