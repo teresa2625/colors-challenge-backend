@@ -25,12 +25,12 @@ cd colors-challenge-backend
 
 2. Install the dependencies:
 ```
-npm install
+yarn install
 ```
 
 3. Start the backend server:
 ```
-npm start
+yarn start
 ```
 This will start the backend server, and it will be running on http://localhost:5000 by default.
 
@@ -45,12 +45,12 @@ cd colors-challenge-frontend
 
 2. Install the frontend dependencies:
 ```
-npm install
+yarn install
 ```
 
 3. Start the frontend development server:
 ```
-npm start
+yarn start
 ```
 This will run the frontend server, and it will be available at http://localhost:3000 by default.
 
@@ -105,7 +105,7 @@ Here are the next steps for improving the functionality:
 ### Running Tests
 To run the tests for the backend/frontend, run the following command:
 ```
-npm test
+yarn test
 ```
 
 ### Coverage
