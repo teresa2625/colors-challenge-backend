@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "test:ci": "jest --coverage",
     "start": "node index.js",
     "format": "prettier --write **/**/*.js"
   },
@@ -19,5 +20,8 @@
   "author": "Teresa <chua0033@student.monash.edu>",
   "license": "ISC",
   "description": "",
-  "repository": "https://github.com/teresa2625/colors-challenge-backend.git"
+  "repository": "https://github.com/teresa2625/colors-challenge-backend.git",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
