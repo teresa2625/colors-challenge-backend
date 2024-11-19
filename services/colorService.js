@@ -35,9 +35,9 @@ class ${strategyData.name.toUpperCase()}Strategy {
   generate${strategyData.name.toUpperCase()}() {
     return { 
     type: "${strategyData.colorSpace.toLowerCase()}", 
-    red:Math.floor(Math.random() * (redMax - redMin + 1)) + redMin,
-    green: Math.floor(Math.random() * (greenMax - greenMin + 1)) + greenMin,
-    blue: Math.floor(Math.random() * (blueMax - blueMin + 1)) + blueMin, };
+    red:Math.floor(Math.random() * (${strategyData.rgbRange.redMax} - ${strategyData.rgbRange.redMin} + 1)) + ${strategyData.rgbRange.redMin},
+    green: Math.floor(Math.random() * (${strategyData.rgbRange.greenMax} - ${strategyData.rgbRange.greenMin} + 1)) + ${strategyData.rgbRange.greenMin},
+    blue: Math.floor(Math.random() * (${strategyData.rgbRange.blueMax} - ${strategyData.rgbRange.blueMin} + 1)) + ${strategyData.rgbRange.blueMin}, };
   }
 }
 module.exports = ${strategyData.name.toUpperCase()}Strategy;`;

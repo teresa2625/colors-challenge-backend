@@ -63,7 +63,18 @@ describe("ColorService", () => {
 
   describe("addColorStrategy", () => {
     it("should add a new strategy file if it does not exist", () => {
-      const strategyData = { name: "test", colorSpace: "RGB" };
+      const strategyData = {
+        name: "test",
+        colorSpace: "RGB",
+        rgbRange: {
+          redMin: 0,
+          redMax: 100,
+          greenMin: 0,
+          greenMax: 100,
+          blueMin: 0,
+          blueMax: 100,
+        },
+      };
 
       fs.existsSync.mockReturnValue(false);
 
